@@ -1,7 +1,7 @@
 package Checkout::CyberSource::SOAP;
 use Moose;
 BEGIN {
-    # VERSION
+    our $VERSION = '0.07'; # VERSION
 }
 use SOAP::Lite;
 use Time::HiRes qw/gettimeofday/;
@@ -197,36 +197,17 @@ __PACKAGE__->meta->make_immutable;
 
 # ABSTRACT: A Modern Perl interface to CyberSource's SOAP API
 
-=head1 WHY?
 
-Folks often have a need for simple and quick, but "enterprise-level" payment-
-gateway integration. CyberSource's Simple Order API still requires that you
-compile a binary, and it won't compile on 64-bit processors (no, not OSes, but
-processors, i.e., what I imagine to be most development workstations by now).
-So you have to use the SOAP API, which is unwieldy, not least because it uses
-XML. May no one struggle with this again.  :)
+__END__
+=pod
 
-=head1 NOTICE
+=head1 NAME
 
-=head2 Credit Card Numbers
+Checkout::CyberSource::SOAP - A Modern Perl interface to CyberSource's SOAP API
 
-To save you some legal hassles and vulnerability, this module does not store
-credit card numbers. If you'd like the option of returning a credit card
-number from the Response object, please send a patch.
+=head1 VERSION
 
-=head2 ID and Key
-
-Please note that you B<must> use your own CyberSource id and key, even for
-testing purposes on CyberSource's test server. This module defaults to
-using the test server, so when you go into production, set production to
-a true value in your configuration file or in your object construction, e.g.,
-
-    my $checkout = Checkout::CyberSource::SOAP->new(
-        id         => $id,
-        key        => $key,
-        production => 1,
-        column_map => $column_map
-    );
+version 0.07
 
 =head1 SYNOPSIS
 
@@ -273,7 +254,6 @@ database.
         # Display error message
         print $response->error->{message};
     }
-
 
 =head2 Catalyst
 
@@ -334,30 +314,294 @@ form and do something like this:
         return;
     }
 
+=head1 METHODS
 
-=method item checkout
+=head2 item checkout
 
 The only method you need to call.
 
-=method addComplexType
+=head2 addComplexType
 
 Internal method for construction of the SOAP object.
 
-=method addField
+=head2 addField
 
 Internal method for construction of the SOAP object.
 
-=method addItem
+=head2 addItem
 
 Internal method for construction of the SOAP object.
 
-=method addService
+=head2 addService
 
 Internal method for construction of the SOAP object.
 
-=method formSOAPHeader
+=head2 formSOAPHeader
 
 Internal method for construction of the SOAP object.
+
+=head1 ATTRIBUTES
+
+=head2 refcode
+
+Reader: refcode
+
+Type: Str
+
+This documentation was automatically generated.
+
+=head2 wsse_nsuri
+
+Reader: wsse_nsuri
+
+Type: Str
+
+This documentation was automatically generated.
+
+=head2 key
+
+Reader: key
+
+Type: Str
+
+This documentation was automatically generated.
+
+=head2 production
+
+Reader: production
+
+Type: Bool
+
+This documentation was automatically generated.
+
+=head2 wsse_prefix
+
+Reader: wsse_prefix
+
+Type: Str
+
+This documentation was automatically generated.
+
+=head2 id
+
+Reader: id
+
+Type: Str
+
+This documentation was automatically generated.
+
+=head2 password_text
+
+Reader: password_text
+
+Type: Str
+
+This documentation was automatically generated.
+
+=head2 response
+
+Reader: response
+
+Writer: response
+
+Type: Checkout::CyberSource::SOAP::Response
+
+This documentation was automatically generated.
+
+=head2 column_map
+
+Reader: column_map
+
+Type: HashRef
+
+This attribute is required.
+
+This documentation was automatically generated.
+
+=head2 cybs_version
+
+Reader: cybs_version
+
+Type: Str
+
+This documentation was automatically generated.
+
+=head2 prod_server
+
+Reader: prod_server
+
+Type: Str
+
+This documentation was automatically generated.
+
+=head2 test_server
+
+Reader: test_server
+
+Type: Str
+
+This documentation was automatically generated.
+
+=head2 agent
+
+Reader: agent
+
+Type: SOAP::Lite
+
+This documentation was automatically generated.
+
+=head1 METHODS
+
+=head2 wsse_nsuri
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 addItem
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 key
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 id
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 new
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 addField
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 addComplexType
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 column_map
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 prod_server
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 cybs_version
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 refcode
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 production
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 wsse_prefix
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 addService
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 password_text
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 response
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 formSOAPHeader
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 checkout
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 test_server
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head2 agent
+
+Method originates in Checkout::CyberSource::SOAP.
+
+This documentation was automaticaly generated.
+
+=head1 WHY?
+
+Folks often have a need for simple and quick, but "enterprise-level" payment-
+gateway integration. CyberSource's Simple Order API still requires that you
+compile a binary, and it won't compile on 64-bit processors (no, not OSes, but
+processors, i.e., what I imagine to be most development workstations by now).
+So you have to use the SOAP API, which is unwieldy, not least because it uses
+XML. May no one struggle with this again.  :)
+
+=head1 NOTICE
+
+=head2 Credit Card Numbers
+
+To save you some legal hassles and vulnerability, this module does not store
+credit card numbers. If you'd like the option of returning a credit card
+number from the Response object, please send a patch.
+
+=head2 ID and Key
+
+Please note that you B<must> use your own CyberSource id and key, even for
+testing purposes on CyberSource's test server. This module defaults to
+using the test server, so when you go into production, set production to
+a true value in your configuration file or in your object construction, e.g.,
+
+    my $checkout = Checkout::CyberSource::SOAP->new(
+        id         => $id,
+        key        => $key,
+        production => 1,
+        column_map => $column_map
+    );
 
 =head1 CONTRIBUTORS
 
@@ -368,4 +612,25 @@ Caleb Cushing (xenoterracide) E<lt>xenoterracide@gmail.comE<gt>
 
 L<Catalyst::Model::Adaptor> L<Business::OnlinePayment::CyberSource>
 
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+https://github.com/amiri/Checkout--CyberSource--SOAP/issues
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
+
+=head1 AUTHOR
+
+Amiri Barksdale <amiri@arisdottle.net>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2011 by Amiri Barksdale.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
 =cut
+

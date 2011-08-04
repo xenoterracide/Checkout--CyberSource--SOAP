@@ -1,7 +1,7 @@
 package Checkout::CyberSource::SOAP::Response;
 use Moose;
 BEGIN {
-    # VERSION
+    our $VERSION = '0.07'; # VERSION
 }
 use Business::CreditCard;
 use namespace::autoclean;
@@ -388,6 +388,18 @@ __PACKAGE__->meta->make_immutable;
 
 # ABSTRACT: a response object for CyberSource SOAP responses
 
+
+__END__
+=pod
+
+=head1 NAME
+
+Checkout::CyberSource::SOAP::Response - a response object for CyberSource SOAP responses
+
+=head1 VERSION
+
+version 0.07
+
 =head1 SYNOPSIS
 
     my $response = $c->model('Checkout')->checkout( $c->req->params );
@@ -395,11 +407,313 @@ __PACKAGE__->meta->make_immutable;
     When you call Checkout::CyberSource::SOAP::process, your response object
     is a Checkout::CyberSource::SOAP::Response.
 
-=method respond
+=head1 METHODS
+
+=head2 respond
 
 This basically just maps response codes from Checkout::CyberSource::SOAP to a
 function returning success or failure--there are many ways to fail, thus most
 of the entries in the dispatch table.
+
+=head1 ATTRIBUTES
+
+=head2 error
+
+Reader: error
+
+Type: HashRef
+
+This documentation was automatically generated.
+
+=head2 success
+
+Reader: success
+
+Type: HashRef
+
+This documentation was automatically generated.
+
+=head2 handler
+
+Reader: handler
+
+Type: HashRef
+
+This documentation was automatically generated.
+
+=head2 payment_info
+
+Reader: payment_info
+
+Type: HashRef
+
+This documentation was automatically generated.
+
+=head1 METHODS
+
+=head2 proctime
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 merchprob
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 transrev
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 proctype
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 authrev
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 servicetime
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 nsf
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 voided
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 new
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 invalid
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 success
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 expiry
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 procdecline
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 card_type
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 cid
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 reqval
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 cv
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 sysfail
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 EMPTY
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 missing
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 lunch
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 badclient
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 amexcid
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 badnum
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 authcap
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 error
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 limit
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 procfail
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 stolen
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 novoid
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 gendecline
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 toomuch
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 prevtrans
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 DEFAULT
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 servertime
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 badcap
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 successful
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 handler
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 addressver
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 FAULT
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 present
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 respond
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 verbconf
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
+
+=head2 payment_info
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+This documentation was automaticaly generated.
 
 =head1 CONTRIBUTORS
 
@@ -409,4 +723,25 @@ Tomas Doran (t0m) E<lt>bobtfish@bobtfish.netE<gt>
 
 L<Catalyst::Model::Adaptor> L<Business::OnlinePayment::CyberSource>
 
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+https://github.com/amiri/Checkout--CyberSource--SOAP/issues
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
+
+=head1 AUTHOR
+
+Amiri Barksdale <amiri@arisdottle.net>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2011 by Amiri Barksdale.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
 =cut
+
