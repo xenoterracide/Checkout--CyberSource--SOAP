@@ -1,7 +1,7 @@
 package Checkout::CyberSource::SOAP;
 use Moose;
 BEGIN {
-    our $VERSION = '0.07'; # VERSION
+    our $VERSION = '0.08'; # VERSION
 }
 use SOAP::Lite;
 use Time::HiRes qw/gettimeofday/;
@@ -207,7 +207,7 @@ Checkout::CyberSource::SOAP - A Modern Perl interface to CyberSource's SOAP API
 
 =head1 VERSION
 
-version 0.07
+version 0.08
 
 =head1 SYNOPSIS
 

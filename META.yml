@@ -28,4 +28,4 @@ requires:
 resources:
   bugtracker: https://github.com/amiri/Checkout--CyberSource--SOAP/issues
   repository: git://github.com/amiri/Checkout--CyberSource--SOAP.git
-version: 0.07
+version: 0.08
