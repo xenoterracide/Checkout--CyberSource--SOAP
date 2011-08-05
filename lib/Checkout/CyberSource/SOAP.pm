@@ -340,6 +340,172 @@ Internal method for construction of the SOAP object.
 
 Internal method for construction of the SOAP object.
 
+=head1 ATTRIBUTES
+
+=head2 refcode
+
+Reader: refcode
+
+Type: Str
+
+=head2 wsse_nsuri
+
+Reader: wsse_nsuri
+
+Type: Str
+
+=head2 key
+
+Reader: key
+
+Type: Str
+
+=head2 production
+
+Reader: production
+
+Type: Bool
+
+=head2 wsse_prefix
+
+Reader: wsse_prefix
+
+Type: Str
+
+=head2 id
+
+Reader: id
+
+Type: Str
+
+=head2 password_text
+
+Reader: password_text
+
+Type: Str
+
+=head2 response
+
+Reader: response
+
+Writer: response
+
+Type: Checkout::CyberSource::SOAP::Response
+
+=head2 column_map
+
+Reader: column_map
+
+Type: HashRef
+
+This attribute is required.
+
+=head2 cybs_version
+
+Reader: cybs_version
+
+Type: Str
+
+=head2 prod_server
+
+Reader: prod_server
+
+Type: Str
+
+=head2 test_server
+
+Reader: test_server
+
+Type: Str
+
+=head2 agent
+
+Reader: agent
+
+Type: SOAP::Lite
+
+=head1 METHODS
+
+=head2 wsse_nsuri
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 addItem
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 key
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 id
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 new
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 addField
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 addComplexType
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 column_map
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 prod_server
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 cybs_version
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 refcode
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 production
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 wsse_prefix
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 addService
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 password_text
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 response
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 formSOAPHeader
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 checkout
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 test_server
+
+Method originates in Checkout::CyberSource::SOAP.
+
+=head2 agent
+
+Method originates in Checkout::CyberSource::SOAP.
+
 =head1 WHY?
 
 Folks often have a need for simple and quick, but "enterprise-level" payment-

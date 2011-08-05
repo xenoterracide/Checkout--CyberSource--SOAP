@@ -91,6 +91,8 @@ is( $cy->response->success->{message},
 );
 ok( !$cy->response->{error}, 'No error exists' );
 
+use Data::Dumper;
+note Dumper $cy->response;
 ##################### INCORRECT DATA
 
 my $cy3 = Checkout::CyberSource::SOAP->new(

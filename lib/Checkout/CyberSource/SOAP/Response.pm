@@ -415,6 +415,210 @@ This basically just maps response codes from Checkout::CyberSource::SOAP to a
 function returning success or failure--there are many ways to fail, thus most
 of the entries in the dispatch table.
 
+=head1 ATTRIBUTES
+
+=head2 error
+
+Reader: error
+
+Type: HashRef
+
+=head2 success
+
+Reader: success
+
+Type: HashRef
+
+=head2 handler
+
+Reader: handler
+
+Type: HashRef
+
+=head2 payment_info
+
+Reader: payment_info
+
+Type: HashRef
+
+=head1 METHODS
+
+=head2 proctime
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 merchprob
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 transrev
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 proctype
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 authrev
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 servicetime
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 nsf
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 voided
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 new
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 invalid
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 success
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 expiry
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 procdecline
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 card_type
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 cid
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 reqval
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 cv
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 sysfail
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 EMPTY
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 missing
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 lunch
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 badclient
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 amexcid
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 badnum
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 authcap
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 error
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 limit
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 procfail
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 stolen
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 novoid
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 gendecline
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 toomuch
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 prevtrans
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 DEFAULT
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 servertime
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 badcap
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 successful
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 handler
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 addressver
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 FAULT
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 present
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 respond
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 verbconf
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
+=head2 payment_info
+
+Method originates in Checkout::CyberSource::SOAP::Response.
+
 =head1 CONTRIBUTORS
 
 Tomas Doran (t0m) E<lt>bobtfish@bobtfish.netE<gt>

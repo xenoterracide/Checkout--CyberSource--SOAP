@@ -129,6 +129,137 @@ METHODS
   formSOAPHeader
     Internal method for construction of the SOAP object.
 
+ATTRIBUTES
+  refcode
+    Reader: refcode
+
+    Type: Str
+
+  wsse_nsuri
+    Reader: wsse_nsuri
+
+    Type: Str
+
+  key
+    Reader: key
+
+    Type: Str
+
+  production
+    Reader: production
+
+    Type: Bool
+
+  wsse_prefix
+    Reader: wsse_prefix
+
+    Type: Str
+
+  id
+    Reader: id
+
+    Type: Str
+
+  password_text
+    Reader: password_text
+
+    Type: Str
+
+  response
+    Reader: response
+
+    Writer: response
+
+    Type: Checkout::CyberSource::SOAP::Response
+
+  column_map
+    Reader: column_map
+
+    Type: HashRef
+
+    This attribute is required.
+
+  cybs_version
+    Reader: cybs_version
+
+    Type: Str
+
+  prod_server
+    Reader: prod_server
+
+    Type: Str
+
+  test_server
+    Reader: test_server
+
+    Type: Str
+
+  agent
+    Reader: agent
+
+    Type: SOAP::Lite
+
+METHODS
+  wsse_nsuri
+    Method originates in Checkout::CyberSource::SOAP.
+
+  addItem
+    Method originates in Checkout::CyberSource::SOAP.
+
+  key
+    Method originates in Checkout::CyberSource::SOAP.
+
+  id
+    Method originates in Checkout::CyberSource::SOAP.
+
+  new
+    Method originates in Checkout::CyberSource::SOAP.
+
+  addField
+    Method originates in Checkout::CyberSource::SOAP.
+
+  addComplexType
+    Method originates in Checkout::CyberSource::SOAP.
+
+  column_map
+    Method originates in Checkout::CyberSource::SOAP.
+
+  prod_server
+    Method originates in Checkout::CyberSource::SOAP.
+
+  cybs_version
+    Method originates in Checkout::CyberSource::SOAP.
+
+  refcode
+    Method originates in Checkout::CyberSource::SOAP.
+
+  production
+    Method originates in Checkout::CyberSource::SOAP.
+
+  wsse_prefix
+    Method originates in Checkout::CyberSource::SOAP.
+
+  addService
+    Method originates in Checkout::CyberSource::SOAP.
+
+  password_text
+    Method originates in Checkout::CyberSource::SOAP.
+
+  response
+    Method originates in Checkout::CyberSource::SOAP.
+
+  formSOAPHeader
+    Method originates in Checkout::CyberSource::SOAP.
+
+  checkout
+    Method originates in Checkout::CyberSource::SOAP.
+
+  test_server
+    Method originates in Checkout::CyberSource::SOAP.
+
+  agent
+    Method originates in Checkout::CyberSource::SOAP.
+
 WHY?
     Folks often have a need for simple and quick, but "enterprise-level"
     payment- gateway integration. CyberSource's Simple Order API still
